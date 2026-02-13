@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGpt Crack",
+  "version": "1.0",
+  "description": "A simple chatgpt cracker . made by Falfoul Engineering Team.",
+  
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icons/icon.png"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://*.chatgpt.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+
+  "permissions": ["activeTab"],
+  
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*",
+    "https://*.chatgpt.com/*"
+  ]
+}

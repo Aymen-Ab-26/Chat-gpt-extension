@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  min-width: 200px;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 15px;
+  background-color: bisque;
+}
+body{
+    background-color: rgb(49, 2, 42);
+    color:white;
+    text-align: center;
+}
+
